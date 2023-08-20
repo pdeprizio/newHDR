@@ -1,3 +1,10 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+
 .container-fluid{
     background-color: rgb(255, 255, 255);
 }
@@ -18,8 +25,78 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(40, 32, 129, 0.44); 
+    background-color: rgba(3, 1, 21, 0.615); 
 }
+
+/* Fire Damage header*/
+.fire-header{
+    min-height: 80vh;
+    position: relative;
+    background-image: url('images/firedamage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fire-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(106, 6, 6, 0.475); 
+}
+
+/* Smoke Damage header*/
+
+.smoke-damage{
+    min-height: 80vh;
+    position: relative;
+    background-image: url('images/smokedamage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.smoke-damage::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 77, 77, 0.475); 
+}
+
+/*Mold Damage header*/
+
+.mold-header{
+    min-height: 80vh;
+    position: relative;
+    background-image: url('images/mold.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mold-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 86, 28, 0.398); 
+}
+
+
+
+
+
+
+
+
+
+
+
 .dropdown-menu{
     border-color: transparent;
     text-align: center;
@@ -33,8 +110,8 @@
 }
 .home h1{
     
-    font-size: 60px;
-    margin-top: 100px;
+    font-size: 45px;
+    margin-top: 30px;
     font-weight: 600;
     z-index: 10;
     color: white;
@@ -53,13 +130,16 @@
     display: inline-block;
     text-decoration: none;
     color: white;
-    border: 1px solid white;
+    border: 5px solid white;
+    border-radius: 10px;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 20px;
     background: transparent;
     position: relative;
     cursor: pointer;
     z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .call-btn:hover{
@@ -68,6 +148,140 @@
     transition: 1s;
 }
 
+.water-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(7, 127, 255);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.water-btn:hover{
+    border: 1px solid black;
+    background: rgb(7, 127, 255);
+    transition: 1s;
+}
+.fire-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 45px;
+    font-size: 20px;
+    background: rgb(255, 0, 0);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 500;
+   
+}
+
+.fire-btn:hover{
+    border: 1px solid black;
+    background: rgb(255, 0, 0);
+    transition: 1s;
+}
+
+.smoke-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 500;
+   
+}
+
+.smoke-btn:hover{
+    border: 1px solid black;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.sewage-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    background: rgb(174, 70, 0);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 500;
+   
+}
+
+.sewage-btn:hover{
+    border: 1px solid black;
+    background: rgb(174, 70, 0);
+    transition: 1s;
+}
+.mold-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 16px;
+    font-size: 20px;
+    background: rgb(0, 156, 39);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 15px;
+    font-weight: 500;
+   
+}
+
+.mold-btn:hover{
+    border: 1px solid black;
+    background: rgb(0, 156, 39);
+    transition: 1s;
+}
+
+/* Fire damage landing page css*/
+
+.fire-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e234348d;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.fire-damage-content{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
 
 
 
@@ -87,20 +301,59 @@
     z-index: 100;
 }
 
+
 .water-damage-content{
     background-color: white;
     width: 80%;
     height: 80%;
     border-radius: 10px;
+    display: block;
+
 }
+
+/* Mold damage landing page css*/
+
+.mold-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0083378b;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.mold-damage-content{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
+
+
+.water-damage-content ul,
+.fire-damage-content ul, 
+.smoke-damage-content ul{
+    margin: 10px;
+    font-size: 25px;
+}
+
 .phone{
     background-color: navy;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     color: white;
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     padding: 10px;
+    font-size: 30px;
 }
 
 
