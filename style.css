@@ -3,13 +3,12 @@
 }
 
 
-
-
 .container-fluid{
     background-color: rgb(255, 255, 255);
 }
+/* Home page main section*/
 .custom-background {
-    min-height: 80vh;
+    min-height: 100vh;
     position: relative;
     background-image: url('images/flooded-house.jpg');
     background-position: center;
@@ -28,9 +27,16 @@
     background-color: rgba(3, 1, 21, 0.615); 
 }
 
+/* Water page main section*/
+
+.water-header{
+    min-height: 60vh;
+}
+
+
 /* Fire Damage header*/
 .fire-header{
-    min-height: 80vh;
+    min-height: 60vh;
     position: relative;
     background-image: url('images/firedamage.jpg');
     background-position: center;
@@ -49,15 +55,15 @@
 
 /* Smoke Damage header*/
 
-.smoke-damage{
-    min-height: 80vh;
+.smoke-header{
+    min-height: 50vh;
     position: relative;
     background-image: url('images/smokedamage.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.smoke-damage::before { 
+.smoke-header::before { 
     content: "";
     position: absolute;
     top: 0;
@@ -70,7 +76,7 @@
 /*Mold Damage header*/
 
 .mold-header{
-    min-height: 80vh;
+    min-height: 50vh;
     position: relative;
     background-image: url('images/mold.jpg');
     background-position: center;
@@ -87,6 +93,25 @@
     background-color: rgba(5, 86, 28, 0.398); 
 }
 
+/* Sewage Damage header*/
+
+.sewage-header{
+    min-height: 50vh;
+    position: relative;
+    background-image: url('images/sewage-cleanup.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sewage-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 50, 0, 0.584); 
+}
 
 
 
@@ -129,12 +154,12 @@
 .call-btn{
     display: inline-block;
     text-decoration: none;
-    color: white;
-    border: 5px solid white;
+    color: rgb(0, 0, 0);
+    border: 5px solid transparent;
     border-radius: 10px;
     padding: 12px 34px;
     font-size: 20px;
-    background: transparent;
+    background: rgb(255, 255, 255);
     position: relative;
     cursor: pointer;
     z-index: 10;
@@ -143,8 +168,8 @@
 }
 
 .call-btn:hover{
-    border: 1px solid black;
-    background: red;
+    border: 1px solid transparent;
+    background: rgb(255, 255, 255);
     transition: 1s;
 }
 
@@ -266,7 +291,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e234348d;
+    background-color: rgb(189, 0, 0);
     width: 100%;
     height: 40vh;
     margin: auto;
@@ -275,7 +300,7 @@
 
 
 .fire-damage-content{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -317,7 +342,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0083378b;
+    background-color: #0036088b;
     width: 100%;
     height: 40vh;
     margin: auto;
@@ -334,11 +359,59 @@
 
 }
 
+/* Smoke damage landing page css*/
+
+.smoke-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d9d9d8b;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.smoke-damage-content{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
+/* Sewage damage landing page css*/
+
+.sewage-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.sewage-damage-content{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
 
 
 .water-damage-content ul,
 .fire-damage-content ul, 
-.smoke-damage-content ul{
+.smoke-damage-content ul,
+.sewage-damage-content ul,
+.mold-damage-content ul{
     margin: 10px;
     font-size: 25px;
 }
@@ -362,7 +435,7 @@
 
 
 
-
+/* Footer content */
 
 
 footer{
