@@ -292,10 +292,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: rgb(189, 0, 0);
     width: 100%;
     height: 60%;
-    margin: auto;
+    padding: 20px;
     z-index: 100;
 }
 
@@ -314,7 +316,7 @@
     justify-content: center;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 50vh;
+    height: 50%;
     padding: 20px;
     margin: auto;
     z-index: 100;
@@ -326,6 +328,7 @@
     width: 80%;
     height: 80%;
     padding: 20px;
+    text-align: center;
     border-radius: 10px;
     display: block;
 
@@ -393,15 +396,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0036088b;
+    padding: 20px;
+    background-color: #0b28108b;
     width: 100%;
-    height: 40vh;
+    height: 50%;
+    margin: auto;
+    z-index: 100;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.mold-damage-content{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+
+}
+
+.mold-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #58585833;
+    width: 100%;
+    height: 70%;
     margin: auto;
     z-index: 100;
 }
 
 
-.mold-damage-content{
+.mold-damage-content2{
     background-color: white;
     width: 80%;
     height: 80%;
@@ -418,7 +448,31 @@
     justify-content: center;
     background-color: #9d9d9d8b;
     width: 100%;
-    height: 40vh;
+    height: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 100;
+    padding: 20px;
+}
+
+
+.smoke-damage-content2{
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
+.smoke-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d9d9d18;
+    width: 100%;
+    height: 60%;
     margin: auto;
     z-index: 100;
 }
@@ -441,9 +495,12 @@
     justify-content: center;
     background-color: #000000;
     width: 100%;
-    height: 40vh;
+    height: 50%;
     margin: auto;
+    padding: 20px;
     z-index: 100;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
@@ -452,9 +509,33 @@
     width: 80%;
     height: 80%;
     border-radius: 10px;
+    padding: 20px;
     display: block;
 
 }
+.sewage-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7f7f7f2e;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.sewage-damage-content2{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    padding: 20px;
+
+}
+
 
 
 
