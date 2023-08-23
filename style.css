@@ -27,6 +27,29 @@
     background-color: rgba(3, 1, 21, 0.615); 
 }
 
+
+/*  Photo carousel */
+
+.images {
+    max-width: 70%;
+    max-height: 40%;
+    position: relative;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Styles for screens larger than 1024px wide (laptops and desktops) */
+@media (min-width: 1024px) {
+    .images {
+        max-width: 50%; /* Adjust the percentage as needed */
+        max-height: 60%; /* Adjust the percentage as needed */
+    }
+}
+
+
+
+
 /* Water page main section*/
 
 .water-header{
@@ -58,7 +81,7 @@
 .smoke-header{
     min-height: 50vh;
     position: relative;
-    background-image: url('images/smokedamage.jpg');
+    background-image: url('images/puff-backs.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +113,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(5, 86, 28, 0.398); 
+    background-color: rgba(96, 139, 108, 0.398); 
 }
 
 /* Sewage Damage header*/
@@ -269,7 +292,7 @@
     color: white;
     border: 5px solid transparent;
     border-radius: 10px;
-    padding: 5px 16px;
+    padding: 5px 30px;
     font-size: 20px;
     background: rgb(0, 156, 39);
     position: relative;
@@ -281,7 +304,7 @@
 }
 
 .mold-btn:hover{
-    border: 1px solid black;
+    border: 1px solid transparent;
     background: rgb(0, 156, 39);
     transition: 1s;
 }
@@ -294,7 +317,7 @@
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: rgb(189, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 60%;
     padding: 20px;
@@ -304,6 +327,7 @@
 
 .fire-damage-content{
     background-color: rgb(255, 255, 255);
+    border: 2px solid black;
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -314,7 +338,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 50%;
     padding: 20px;
@@ -346,7 +370,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #001c838b;
+    background-color: #ffffff8b;
     width: 100%;
     height: 60%;
     margin-top: 2%;
@@ -358,6 +382,7 @@
 
 .water-damage-content{
     background-color: white;
+    border: 2px solid black;
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -369,7 +394,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000f0;
+    background-color: #fffffff0;
     width: 100%;
     height: 80%;
     margin: auto;
@@ -397,7 +422,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #0b28108b;
+    background-color: #ffffff;
     width: 100%;
     height: 50%;
     margin: auto;
@@ -414,7 +439,7 @@
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 10px;
-    padding: 20px;
+    border: 2px solid black;
     display: block;
 
 }
@@ -423,7 +448,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #58585833;
+    background-color: #ffffff;
     width: 100%;
     height: 70%;
     margin: auto;
@@ -446,7 +471,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #9d9d9d8b;
+    background-color: #ffffff;
     width: 100%;
     height: 50%;
     margin-top: 2%;
@@ -454,15 +479,26 @@
     z-index: 100;
     padding: 20px;
 }
-
-
-.smoke-damage-content2{
+.smoke-damage-content{
     background-color: white;
-    padding: 20px;
+    border: 2px solid black;
     width: 80%;
     height: 80%;
     border-radius: 10px;
     display: block;
+
+}
+
+.smoke-damage-content2{
+    background-color: white;
+   
+    padding: 30px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
 }
 
@@ -470,7 +506,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #9d9d9d18;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 60%;
     margin: auto;
@@ -478,22 +514,13 @@
 }
 
 
-.smoke-damage-content{
-    background-color: white;
-    width: 80%;
-    height: 80%;
-    border-radius: 10px;
-    display: block;
-
-}
-
 /* Sewage damage landing page css*/
 
 .sewage-damage{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
+    background-color: #ffffff;
     width: 100%;
     height: 50%;
     margin: auto;
@@ -506,10 +533,10 @@
 
 .sewage-damage-content{
     background-color: white;
+    border: 2px solid black;
     width: 80%;
     height: 80%;
     border-radius: 10px;
-    padding: 20px;
     display: block;
 
 }
@@ -517,7 +544,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #7f7f7f2e;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -550,8 +577,8 @@
 
 .phone{
     background-color: navy;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     color: white;
     display: flex;
     justify-content: center;
@@ -583,10 +610,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    max-width: 500px;
-    margin:10px auto;
-    line-height: 28px;
-    font-size: 14px;
+ 
 }
 .footer-content h3{
 font-size: 1.8rem;
@@ -603,6 +627,7 @@ line-height: 3rem;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    padding-right: 15px;
 }
 .socials li{
     margin: 0 10px;
