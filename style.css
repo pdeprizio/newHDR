@@ -47,28 +47,28 @@
 
     }
 }
-.restorationintro{
-    width: 100%;
-    height: 40%;
-    text-align: justify;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
-.restoration-content{
-    width: 100%;
-    height: 40%;
-    border: 2px solid black;
-    
-    border-radius: 10px;
-    padding: 10px;
+span{
+    color: rgb(15, 73, 232);
+}
+.restorationintro {
     text-align: center;
-    font-weight: 300;
-}
-.restoration-content h5{
-    
-}
+    margin: 10px;
+    font-weight: 600;
+  }
 
+  /* Apply styling to the restoration-content section */
+  .restoration-content {
+    text-align: center;
+    padding: 30px 0; /* Add vertical and horizontal padding */
+    margin: 10px;
+  }
+  .centered-image {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally with top and bottom margin */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+    /* Adjust the width as needed */
+  }
 /* Water page main section*/
 
 .water-header{
