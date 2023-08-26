@@ -26,6 +26,12 @@
     height: 100%;
     background-color: rgba(3, 1, 21, 0.615); 
 }
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
+
 
 
 .waterphoto{
@@ -51,23 +57,31 @@
 span{
     color: rgb(15, 73, 232);
 }
-.restorationintro {
+.restorationintro,
+.reviews {
     text-align: center;
-    margin: 10px;
+    margin: 30px;
     font-weight: 600;
   }
 
   /* Apply styling to the restoration-content section */
-  .restoration-content {
+  .restoration-content,
+  .reviews {
     text-align: center;
     padding: 30px 0; /* Add vertical and horizontal padding */
-    margin: 10px;
+    margin: 30px;
   }
   .centered-image {
     display: block;
     margin: 20px auto; /* Center the image horizontally with top and bottom margin */
     max-width: 100%; /* Ensure the image doesn't exceed its original size */
     /* Adjust the width as needed */
+  }
+
+  .reviews{
+    font-weight: 300;
+    padding: 30px;
+    text-align: justify;
   }
 /* Water page main section*/
 
@@ -436,7 +450,7 @@ span{
     width: 80%;
     height: 80%;
     text-align: center;
-    
+    font-weight: 300;
     border-radius: 10px;
     display: block;
 
@@ -480,6 +494,7 @@ span{
     height: 70%;
     margin: auto;
     z-index: 100;
+    
 }
 
 
@@ -587,7 +602,11 @@ span{
     border-radius: 10px;
     display: block;
     padding: 20px;
+}
 
+.no-bullet {
+    list-style-type: none;
+    padding: 0;
 }
 
 
