@@ -89,7 +89,20 @@ span{
     min-height: 60vh;
 }
 
+.contact-header{
+    min-height: 60vh;
+    background-image: url('images/bluesky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
 
+.contact-header h2{
+    color: white;
+    z-index: 200;
+}
 
 
 
@@ -149,7 +162,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(96, 139, 108, 0.398); 
+    background-color: rgba(0, 79, 22, 0.524); 
 }
 
 /* Sewage Damage header*/
@@ -224,7 +237,7 @@ span{
     cursor: pointer;
     z-index: 10;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .call-btn:hover{
@@ -241,7 +254,7 @@ span{
     border-radius: 10px;
     padding: 5px 30px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 800;
     background: rgb(255, 255, 255);
     position: relative;
     cursor: pointer;
@@ -268,7 +281,7 @@ span{
     cursor: pointer;
     z-index: 10;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 800;
    
 }
 
@@ -292,7 +305,7 @@ span{
     cursor: pointer;
     z-index: 10;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 800;
    
 }
 
@@ -316,7 +329,7 @@ span{
     cursor: pointer;
     z-index: 10;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 800;
    
 }
 
@@ -339,7 +352,7 @@ span{
     cursor: pointer;
     z-index: 10;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 800;
    
 }
 
