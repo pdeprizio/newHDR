@@ -1,0 +1,737 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.container-fluid{
+    background-color: rgb(255, 255, 255);
+}
+/* Home page main section*/
+.custom-background {
+    min-height: 100vh;
+    position: relative;
+    background-image: url('images/flooded-house.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.custom-background::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 1, 21, 0.615); 
+}
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
+
+
+
+.waterphoto{
+    max-width: 60%;
+    max-height: 30%;
+}
+
+
+@media (min-width: 768px) {
+    .waterphotos {
+        display: flex;
+        flex-direction: row; /* Change to a row layout on screens wider than 768px */
+        justify-content: space-between;
+    }
+    .waterphoto {
+        flex: 0 0 25%; /* Each image occupies 25% of the container width */
+        max-width: calc(25% - 10px); 
+        margin: 0 5px;
+
+    }
+}
+
+span{
+    color: rgb(15, 73, 232);
+}
+.restorationintro,
+.reviews {
+    text-align: center;
+    margin: 30px;
+    font-weight: 600;
+  }
+
+  /* Apply styling to the restoration-content section */
+  .restoration-content,
+  .reviews {
+    text-align: center;
+    padding: 30px 0; /* Add vertical and horizontal padding */
+    margin: 30px;
+  }
+  .centered-image {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally with top and bottom margin */
+    max-width: 100%; /* Ensure the image doesn't exceed its original size */
+    /* Adjust the width as needed */
+  }
+
+  .reviews{
+    font-weight: 300;
+    padding: 30px;
+    text-align: justify;
+  }
+/* Water page main section*/
+
+.water-header{
+    min-height: 60vh;
+}
+
+.contact-header{
+    min-height: 60vh;
+    background-image: url('images/bluesky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.contact-header h2{
+    color: white;
+    z-index: 200;
+}
+
+
+
+/* Fire Damage header*/
+.fire-header{
+    min-height: 60vh;
+    position: relative;
+    background-image: url('images/firedamage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fire-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(106, 6, 6, 0.475); 
+}
+
+/* Smoke Damage header*/
+
+.smoke-header{
+    min-height: 50vh;
+    position: relative;
+    background-image: url('images/puff-backs.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.smoke-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 77, 77, 0.475); 
+}
+
+/*Mold Damage header*/
+
+.mold-header{
+    min-height: 50vh;
+    position: relative;
+    background-image: url('images/mold.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mold-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 79, 22, 0.524); 
+}
+
+/* Sewage Damage header*/
+
+.sewage-header{
+    min-height: 50vh;
+    position: relative;
+    background-image: url('images/sewage-cleanup.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sewage-header::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 50, 0, 0.584); 
+}
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu{
+    border-color: transparent;
+    text-align: center;
+}
+
+
+.home{
+    width: 100%;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+.home h1{
+    
+    font-size: 45px;
+    margin-top: 30px;
+    font-weight: 600;
+    z-index: 10;
+    color: white;
+}
+
+.home p{
+    margin: 10px 0 40px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+
+.call-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: rgb(255, 0, 0);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.call-btn:hover{
+    border: 1px solid transparent;
+    background: rgb(255, 0, 0);
+    transition: 1s;
+}
+
+.water-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(36, 124, 201);
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: 800;
+    background: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.water-btn:hover{
+    border: 1px solid black;
+    background: rgb(7, 127, 255);
+    color: white;
+    transition: 1s;
+}
+.fire-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 45px;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 800;
+   
+}
+
+.fire-btn:hover{
+    border: 1px solid black;
+    background: rgb(255, 0, 0);
+    color: white;
+    transition: 1s;
+}
+
+.smoke-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 800;
+   
+}
+
+.smoke-btn:hover{
+    border: 1px solid black;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 1s;
+}
+
+.sewage-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(174, 70, 0);
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-weight: 800;
+   
+}
+
+.sewage-btn:hover{
+    border: 1px solid black;
+    background: rgb(174, 70, 0);
+    color: white;
+    transition: 1s;
+}
+.mold-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 156, 39);;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 15px;
+    font-weight: 800;
+   
+}
+
+.mold-btn:hover{
+    border: 1px solid transparent;
+    background: rgb(0, 156, 39);
+    color: white;
+    transition: 1s;
+}
+
+/* Fire damage landing page css*/
+
+.fire-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+    z-index: 100;
+}
+
+
+.fire-damage-content{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+.fire-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.fire-damage-content2{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+
+}
+
+
+
+
+
+
+
+/* Water damage landing page css*/
+
+.water-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff8b;
+    width: 100%;
+    height: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    z-index: 100;
+}
+
+
+.water-damage-content{
+    background-color: white;
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
+.water-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffffff0;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    padding: 20px;
+    z-index: 100;
+}
+
+
+.water-damage-content2{
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 10px;
+    display: block;
+
+}
+
+/* Mold damage landing page css*/
+
+.mold-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    z-index: 100;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.mold-damage-content{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: block;
+
+}
+
+.mold-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    z-index: 100;
+    
+}
+
+
+.mold-damage-content2{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
+/* Smoke damage landing page css*/
+
+.smoke-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    z-index: 100;
+    padding: 20px;
+}
+.smoke-damage-content{
+    background-color: white;
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+
+.smoke-damage-content2{
+    background-color: white;
+   
+    padding: 30px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.smoke-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    z-index: 100;
+}
+
+
+/* Sewage damage landing page css*/
+
+.sewage-damage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    padding: 20px;
+    z-index: 100;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.sewage-damage-content{
+    background-color: white;
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+
+}
+.sewage-damage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+    z-index: 100;
+}
+
+
+.sewage-damage-content2{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    padding: 20px;
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+
+.water-damage-content ul,
+.fire-damage-content ul, 
+.smoke-damage-content ul,
+.sewage-damage-content ul,
+.mold-damage-content ul{
+    margin: 10px;
+    font-size: 25px;
+}
+
+.phone{
+    background-color: navy;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+/* Footer content */
+
+
+footer{
+    background: white;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+.footer-content h3{
+font-size: 1.8rem;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+}
+
+
+.socials{
+    list-style: none;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-right: 15px;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color:#000000;
+}
+.socials a i{
+    font-size: 2.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color:#00000041
+}
+.certified{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+.certified img{
+    padding: 10px;
+}
+#logo{
+    width: 100px;
+}
+#iicrc{
+    width: 150px;
+}
+#osha{
+    width: 100px;
+}
+.footer-bottom{
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  
+}
+.footer-bottom i{
+    color: #0033eb;
+}
+ 
+
